@@ -85,10 +85,10 @@
     <div class="container">
         <h1>Privacy Policy</h1>
         <p class="app-name">জমির হিসাব ক্যালকুলেটর (Jomir Hisab Calculator)</p>
-        <p class="effective-date">Effective Date: December 29, 2024</p>
+        <p class="effective-date">Effective Date: December 31, 2024</p>
 
         <div class="highlight">
-            <strong>Summary:</strong> This app stores all your data locally on your device. We do not collect, transmit, or store any personal information on our servers. The only third-party service used is Google AdMob for displaying advertisements.
+            <strong>Summary:</strong> This app stores all your data locally on your device. We do not collect, transmit, or store any personal information on our servers. Location data is used only for map-based measurement features and Qibla direction, and is not stored or transmitted. Third-party services used include Google AdMob for advertisements and Google Maps for map measurement features.
         </div>
 
         <h2>1. Introduction</h2>
@@ -102,43 +102,75 @@
         <ul>
             <li><strong>Land Owner Files:</strong> Files you create for each land owner or client</li>
             <li><strong>Calculation Data:</strong> Land measurements, dimensions, and calculated areas saved within each file</li>
+            <li><strong>Map Measurements:</strong> Land area measurements made using the map feature, including coordinates of marked points</li>
+            <li><strong>Freehand Sketches:</strong> Hand-drawn sketches and drawings you create for land visualization</li>
             <li><strong>App Preferences:</strong> Language settings, theme (dark/light mode), decimal precision</li>
             <li><strong>Custom Units:</strong> Any custom land units you add</li>
+        </ul>
+
+        <p><strong>Location Data:</strong></p>
+        <ul>
+            <li><strong>Map Measurement:</strong> When you use the map measurement feature, your location is accessed to center the map and allow you to mark land boundaries. This data is processed locally and not transmitted to our servers.</li>
+            <li><strong>Compass & Qibla Direction:</strong> The compass feature uses device sensors (magnetometer and accelerometer). The Qibla direction feature may use your location to calculate the direction to Mecca. Location data is used only for calculation and is not stored or transmitted.</li>
         </ul>
 
         <p><strong>We do NOT collect:</strong></p>
         <ul>
             <li>Personal identification information (name, email, phone number)</li>
-            <li>Location data</li>
             <li>Device contacts or calendar</li>
-            <li>Photos or files</li>
+            <li>Photos or files (other than sketches you create within the app)</li>
             <li>Usage analytics or behavior tracking</li>
+            <li>Location history or tracking data</li>
         </ul>
 
         <h2>3. Third-Party Services</h2>
-        <p>The App uses <strong>Google AdMob</strong> to display advertisements. Google AdMob may collect certain information to serve personalized ads, including:</p>
+
+        <p><strong>Google AdMob (Advertising)</strong></p>
+        <p>The App uses Google AdMob to display advertisements. Google AdMob may collect certain information to serve personalized ads, including:</p>
         <ul>
             <li>Device identifiers (Advertising ID)</li>
             <li>Device information (model, operating system version)</li>
             <li>IP address (for approximate location)</li>
             <li>Ad interaction data (impressions, clicks)</li>
         </ul>
-        <p>This data is collected and processed by Google according to their privacy policy. For more information, please visit:</p>
+        <p>You can opt out of personalized advertising by visiting <a href="https://adssettings.google.com" target="_blank">Google Ads Settings</a>.</p>
+
+        <p><strong>Google Maps Platform (Map Measurement Feature)</strong></p>
+        <p>The map measurement feature uses Google Maps SDK and Google Places API. When using these features, Google may collect:</p>
+        <ul>
+            <li>Location data (when you grant permission)</li>
+            <li>Search queries (when searching for locations)</li>
+            <li>Map interaction data</li>
+            <li>Device and connection information</li>
+        </ul>
+        <p>This data is processed by Google according to their privacy policy.</p>
+
+        <p>For more information about Google's data practices, please visit:</p>
         <ul>
             <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
             <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">How Google uses data from AdMob</a></li>
+            <li><a href="https://cloud.google.com/maps-platform/terms" target="_blank">Google Maps Platform Terms of Service</a></li>
         </ul>
-        <p>You can opt out of personalized advertising by visiting <a href="https://adssettings.google.com" target="_blank">Google Ads Settings</a>.</p>
 
-        <h2>4. Data Storage</h2>
+        <h2>4. Device Permissions</h2>
+        <p>The App requests the following permissions to provide its features:</p>
+        <ul>
+            <li><strong>Location (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION):</strong> Used for map measurement feature to show your current location and for Qibla direction calculation. Location access is optional and only used when you access these specific features.</li>
+            <li><strong>Internet (INTERNET):</strong> Required for displaying advertisements and loading map tiles in the map measurement feature.</li>
+            <li><strong>Body Sensors / Motion Sensors:</strong> Used by the compass feature to detect device orientation and display compass direction.</li>
+        </ul>
+        <p>You can revoke these permissions at any time through your device's Settings. Some features may not work without the required permissions.</p>
+
+        <h2>5. Data Storage</h2>
         <p>All your calculation data, files, and preferences are stored <strong>exclusively on your device</strong> using:</p>
         <ul>
-            <li>Local SQLite database (for land owner files and calculations)</li>
+            <li>Local SQLite database (for land owner files, calculations, and map measurements)</li>
             <li>Android DataStore (for preferences)</li>
+            <li>Local storage (for freehand sketches)</li>
         </ul>
         <p>We do not have access to this data, and it is not transmitted to any servers.</p>
 
-        <h2>5. Data Export and Backup</h2>
+        <h2>6. Data Export and Backup</h2>
         <p>The App provides features to export and backup your data:</p>
         <ul>
             <li><strong>PDF Export:</strong> Export calculations as PDF documents</li>
@@ -148,7 +180,7 @@
         </ul>
         <p>These files are stored on your device and shared only when you choose to do so through Android's share functionality.</p>
 
-        <h2>6. Your Controls</h2>
+        <h2>7. Your Controls</h2>
         <p>You have full control over your data:</p>
         <ul>
             <li><strong>Delete Data:</strong> Delete individual calculations or entire land owner files from within the App</li>
@@ -157,10 +189,10 @@
             <li><strong>Uninstall:</strong> Removing the App will delete all associated data</li>
         </ul>
 
-        <h2>7. Children's Privacy</h2>
+        <h2>8. Children's Privacy</h2>
         <p>The App is not directed at children under 13 years of age. We do not knowingly collect any information from children. The App is a general-purpose utility tool for land measurement calculations.</p>
 
-        <h2>8. Data Security</h2>
+        <h2>9. Data Security</h2>
         <p>Your data is protected by Android's built-in security features:</p>
         <ul>
             <li>App data is stored in a private directory accessible only to this App</li>
@@ -168,10 +200,10 @@
             <li>File sharing uses Android's secure FileProvider system</li>
         </ul>
 
-        <h2>9. Changes to This Policy</h2>
+        <h2>10. Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date. We encourage you to review this policy periodically.</p>
 
-        <h2>10. Contact Us</h2>
+        <h2>11. Contact Us</h2>
         <div class="contact-box">
             <p>If you have any questions about this Privacy Policy or the App, please contact us:</p>
             <p><strong>Email:</strong> <a href="mailto:s.anwar369@gmail.com">s.anwar369@gmail.com</a></p>
@@ -180,7 +212,7 @@
         </div>
 
         <footer>
-            <p>&copy; 2024 Anwar Hossain. All rights reserved.</p>
+            <p>&copy; 2024-2025 Anwar Hossain. All rights reserved.</p>
             <p>জমির হিসাব ক্যালকুলেটর - Land Area Calculator for Bangladesh, India, Pakistan & Nepal</p>
         </footer>
     </div>
